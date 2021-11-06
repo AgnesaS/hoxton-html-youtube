@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+
+:root {
+	--fuentemain: 'Ubuntu', sans-serif;
+	--fuentesecond: 'Poppins', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+
+body {
+    display: grid;
+    grid-template-columns: 230px 1fr;
+    height: 100vh;
+    font-family: var(--fuentesecond);
+  }
+  
+.left-menu {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 50px 1fr;
+    font-size: 1rem;
+    
+  }
+  
+.left-menu__top {
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    justify-content: start;
+    gap: 10px;
+    padding: 15px;
+    
+  }
+  
+.left-menu__items { 
+      display: grid;
+      grid-template-rows: repeat(4,150px);
+      overflow:auto;
+     
+  }
+.item-content__one, .item-content__two, .item-content__three, .item-content__four{
+      display: grid;
+      grid-template-columns: auto auto;
+      gap:20px ;
+      place-content: start;
+      padding: 20px;
+   
+  }
+
+
+} 
+.item-content__two{
+    outline: solid 1px rgba(0, 0, 0, 0.3);
+}
+
+h3{
+      padding: 10px;
+      padding-left: 20px;
+      font-weight: 400;
+  }
+
+main {
+    background-color: #ffff0030;
+    height: 100vh;
+  
+    position: relative;
+  }
+  
+header {
+    background-color: #ffffffee;
+    position: fixed;
+    overflow: scroll;
+    width: calc(100vw - 200px);
+    display: grid;
+    grid-template-rows: 50px auto;
+  
+  }
+  
+.main-menu {
+    display: grid;
+    grid-template-columns: 2fr 0.5fr;
+    outline: solid 0.5px rgba(0, 0, 0, 0.1);
+  
+  }
+.main-menu__search{
+      display: grid;
+      grid-template-columns: 600px auto;
+      justify-content: center;
+      margin: 10px;
+      gap: 10px;
+      
+  }
+input{
+     height: 35px;
+     font-size: 20px;
+     padding: 5px;
+     border: solid 0.5px rgba(0, 0, 0, 0.1);
+     
+  }
+.main-menu__items{
+       display: grid;
+       grid-template-columns: repeat(4,auto);
+       justify-content: end;
+       place-content: center;
+       gap: 30px;
+       margin-top: 10px;
+   }
+  
+header .themes{
+      padding: 0.5rem;
+      
+  }
+  
+header .themes ul {
+    list-style: none;
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: start;
+    gap: 1rem;
+    padding: 0.5rem;
+  }
+
+header .themes button:hover{
+      background-color: black;
+      color: white;
+      transform: scale(1.1);
+
+  }
+  
+header .themes button {
+    min-width: max-content;
+    border: solid 1px #00000030;
+    border-radius: 10px;
+    padding: 0.2rem 0.5rem;
+    border: none;
+  }
+  
+section.videos {
+    background-color: #f9f9f9;
+    overflow: auto;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    align-content: start;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+    padding-top: 130px;
+  }
+  
+  .video {
+    display: grid;
+    grid-template-rows: 150px auto;
+    text-decoration: unset;
+    color: unset;
+  }
+  
+  .video-a .video__background {
+    background-image: url(https://i.ytimg.com/vi/vWT6YhSs76c/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCao7v_fYGfLlW1y1IxRwsYkZyfSw);
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .video-b .video__background {
+    background-image: url(https://i.ytimg.com/vi/H7RkiOck8u4/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLArlW9l7Qyqy0GCVtIJXNUL7wLZcg);
+    background-size: cover;
+    background-position: center;
+  }
+  .video-c .video__background {
+    background-image: url(https://ichef.bbci.co.uk/news/976/cpsprodpb/3381/production/_121458131_hi070823987.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  .video-d .video__background {
+    background-image: url(https://ichef.bbci.co.uk/news/976/cpsprodpb/2567/production/_121457590_3978f207-6b99-4fbe-aba4-47d99ed18715.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  .video-e .video__background {
+    background-image: url(https://ichef.bbci.co.uk/news/976/cpsprodpb/9C3B/production/_121459993_freetown.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  .video-f .video__background {
+    background-image: url(https://ichef.bbci.co.uk/news/976/cpsprodpb/FAF4/production/_121444246_b4ec023f-f294-493c-b353-57e85e846616.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  .video-g .video__background {
+    background-image: url(https://ichef.bbci.co.uk/news/976/cpsprodpb/46EA/production/_121445181_gettyimages-1235604443.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  .video-h .video__background {
+    background-image: url(https://ichef.bbci.co.uk/news/976/cpsprodpb/8A3C/production/_121188353_gettyimages-1272700822.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  .video-i .video__background {
+    background-image: url(https://ichef.bbci.co.uk/news/976/cpsprodpb/20BF/production/_121438380_background_img_7956.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  .video-j .video__background {
+    background-image: url(https://ichef.bbci.co.uk/news/976/cpsprodpb/13E6B/production/_121451518_47bac9f5-3be9-4823-8ac6-d93db36ea19a.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  .video-k .video__background {
+    background-image: url(https://ichef.bbci.co.uk/news/976/cpsprodpb/125F6/production/_121445257_gettyimages-1236362442.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  .video-l .video__background {
+    background-image: url(https://ichef.bbci.co.uk/news/976/cpsprodpb/BFEE/production/_121443194_campbellbbc.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  .video-m .video__background {
+    background-image: url(https://ichef.bbci.co.uk/news/976/cpsprodpb/2781/production/_104231101_gettyimages-155696662.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  .video-n .video__background {
+    background-image: url(https://ichef.bbci.co.uk/news/976/cpsprodpb/11A7B/production/_121451327_gettyimages-863668226.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  .video-o .video__background {
+    background-image: url(https://ichef.bbci.co.uk/news/976/cpsprodpb/17994/production/_121206669_img-20211024-wa0010.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  .video__info {
+    display: grid;
+    grid-template-columns: 70px 1fr;
+  }
+  .video__profile {
+    padding: 0.5rem;
+  }
+  .video__profile img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  .video__more-info {
+    padding: 0.5rem;
+  }
+  .video__more-info__title {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  .video__more-info__channel {
+    font-size: 0.8rem;
+    color: #606060;
+    font-weight: 500;
+  }
+  .video__more-info__views {
+    font-size: 0.8rem;
+    color: #606060;
+    font-weight: 500;
+  }
+  
